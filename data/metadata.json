@@ -1,0 +1,62 @@
+{
+  "filename": "industrial_machine_maintenance_10000_rows.csv",
+  "file_hash": "9d790baf6cb7f5b3a9327b868c7fc346",
+  "total_rows": 10000,
+  "total_cols": 15,
+  "columns": [
+    "machine_id",
+    "machine_name",
+    "event_date",
+    "technician",
+    "running_hours",
+    "downtime_hours",
+    "temperature_celsius",
+    "machine_condition",
+    "repair_status",
+    "root_cause",
+    "error_code",
+    "component_changed",
+    "repair_cost",
+    "production_loss_cost",
+    "total_cost"
+  ],
+  "roles": {
+    "machine": [
+      "machine_id",
+      "machine_name",
+      "machine_condition"
+    ],
+    "time": [
+      "event_date",
+      "downtime_hours"
+    ],
+    "error": [
+      "error_code"
+    ],
+    "status": [
+      "repair_status"
+    ],
+    "description": [
+      "root_cause"
+    ],
+    "numeric": [
+      "temperature_celsius"
+    ],
+    "downtime": [
+      "running_hours"
+    ],
+    "cost": [
+      "repair_cost",
+      "production_loss_cost",
+      "total_cost"
+    ],
+    "technician": [
+      "technician"
+    ],
+    "other": [
+      "component_changed"
+    ]
+  },
+  "loaded_at": "2026-02-24T11:42:17.800268",
+  "memory_mb": 5.06
+}
